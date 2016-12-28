@@ -22,12 +22,14 @@ public class VeryShortIdGenerator implements IdGenerator {
     private static final String CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
     public String generate() {
+        /*
         final StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 5; i++) {
             sb.append(randomChar());
         }
-        
         return sb.toString();
+        */
+        return "" + System.currentTimeMillis();
     }
     
     private static char randomChar() {

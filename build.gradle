@@ -344,8 +344,12 @@ task generateApiDocs(type: Exec) {
     workingDir 'docs-v2'
     commandLine 'npm', 'run', 'apidocs'
 }
+
+//Removi a geracao de documentacao
+/*
 jar.dependsOn generateApiDocs
 processResources.dependsOn generateApiDocs
+*/
 
 task deleteGeneratedApiDocs(type: Delete) {
     delete "src/main/resources/swagger"
