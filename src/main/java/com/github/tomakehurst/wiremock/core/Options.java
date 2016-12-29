@@ -28,7 +28,7 @@ import java.util.Map;
 
 public interface Options {
 
-    int DEFAULT_PORT = 8080;
+    int DEFAULT_PORT = 8081;
     int DYNAMIC_PORT = 0;
     int DEFAULT_CONTAINER_THREADS = 10;
     String DEFAULT_BIND_ADDRESS = "0.0.0.0";

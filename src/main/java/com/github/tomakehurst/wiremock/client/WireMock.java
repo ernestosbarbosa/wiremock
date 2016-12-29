@@ -45,7 +45,7 @@ import static com.google.common.collect.FluentIterable.from;
 
 public class WireMock {
 
-	private static final int DEFAULT_PORT = 8080;
+	private static final int DEFAULT_PORT = 8081;
 	private static final String DEFAULT_HOST = "localhost";
 
 	private final Admin admin;
