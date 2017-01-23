@@ -1,6 +1,6 @@
 FROM java:8-jdk
 
-MAINTAINER Rodolphe CHAIGNEAU <rodolphe.chaigneau@gmail.com>
+MAINTAINER Ernesto Barbosa <ernestosbarbosa@outlook.com>
 
 ENV WIREMOCK_VERSION 2.5.0
 ENV GOSU_VERSION 1.7
