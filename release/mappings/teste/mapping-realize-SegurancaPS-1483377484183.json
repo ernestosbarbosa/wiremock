@@ -7,7 +7,7 @@
   },
   "response" : {
     "status" : 200,
-    "bodyFileName" : "body-realize-SegurancaPS-1483377484183.xml",
+    "bodyFileName" : "teste/body-realize-SegurancaPS-1483377484183.xml",
     "headers" : {
       "Date" : "Mon, 02 Jan 2017 17:18:03 GMT",
       "Transfer-Encoding" : "chunked",
