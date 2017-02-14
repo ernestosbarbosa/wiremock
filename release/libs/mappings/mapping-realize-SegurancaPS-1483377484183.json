@@ -1,0 +1,18 @@
+{
+  "id" : "c4a0f39e-0223-3568-94c8-d00aa7b721b9",
+  "uuid" : "c4a0f39e-0223-3568-94c8-d00aa7b721b9",
+  "request" : {
+    "url" : "/ebs/ppf/realize/SegurancaPS?WSDL",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-realize-SegurancaPS-1483377484183.xml",
+    "headers" : {
+      "Date" : "Mon, 02 Jan 2017 17:18:03 GMT",
+      "Transfer-Encoding" : "chunked",
+      "Content-Type" : "text/xml",
+      "X-Powered-By" : "Servlet/2.5 JSP/2.1"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WL5G3N0:definitions name="SegurancaServiceTc" targetNamespace="http://ws.retaguarda.ppfservices.lojasrenner.com.br/" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://ws.retaguarda.ppfservices.lojasrenner.com.br/" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.retaguarda.ppfservices.lojasrenner.com.br/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://ws.retaguarda.ppfservices.lojasrenner.com.br/" schemaLocation="http://localhost:8011/ebs/ppf/realize/SegurancaPS?SCHEMA%2FPPFRealize%2Fxsd%2FSegurancaServiceTc1"/>
+    </xsd:schema>
+    <xsd:schema xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.retaguarda.ppfservices.lojasrenner.com.br/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://core.ppfservices.lojasrenner.com.br" schemaLocation="http://localhost:8011/ebs/ppf/realize/SegurancaPS?SCHEMA%2FPPFRealize%2Fxsd%2FSegurancaServiceTc2"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="listarPerfis">
+    <WL5G3N0:part element="WL5G3N1:listarPerfis" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarPerfisResponse">
+    <WL5G3N0:part element="WL5G3N1:listarPerfisResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ApplicationFault">
+    <WL5G3N0:part element="WL5G3N1:ApplicationFault" name="fault"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarRecursos">
+    <WL5G3N0:part element="WL5G3N1:listarRecursos" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarRecursosResponse">
+    <WL5G3N0:part element="WL5G3N1:listarRecursosResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarTransacoesAtendimento">
+    <WL5G3N0:part element="WL5G3N1:listarTransacoesAtendimento" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarTransacoesAtendimentoResponse">
+    <WL5G3N0:part element="WL5G3N1:listarTransacoesAtendimentoResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarUsuariosPorTransacao">
+    <WL5G3N0:part element="WL5G3N1:listarUsuariosPorTransacao" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarUsuariosPorTransacaoResponse">
+    <WL5G3N0:part element="WL5G3N1:listarUsuariosPorTransacaoResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="autenticarUsuario">
+    <WL5G3N0:part element="WL5G3N1:autenticarUsuario" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="autenticarUsuarioResponse">
+    <WL5G3N0:part element="WL5G3N1:autenticarUsuarioResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="buscarUsuario">
+    <WL5G3N0:part element="WL5G3N1:buscarUsuario" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="buscarUsuarioResponse">
+    <WL5G3N0:part element="WL5G3N1:buscarUsuarioResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarFuncoes">
+    <WL5G3N0:part element="WL5G3N1:listarFuncoes" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="listarFuncoesResponse">
+    <WL5G3N0:part element="WL5G3N1:listarFuncoesResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarPermissaoBloqueio">
+    <WL5G3N0:part element="WL5G3N1:validarPermissaoBloqueio" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarPermissaoBloqueioResponse">
+    <WL5G3N0:part element="WL5G3N1:validarPermissaoBloqueioResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="buscarUsuarioPorChapaOuMatricula">
+    <WL5G3N0:part element="WL5G3N1:buscarUsuarioPorChapaOuMatricula" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="buscarUsuarioPorChapaOuMatriculaResponse">
+    <WL5G3N0:part element="WL5G3N1:buscarUsuarioPorChapaOuMatriculaResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarRecursoUsuario">
+    <WL5G3N0:part element="WL5G3N1:validarRecursoUsuario" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarRecursoUsuarioResponse">
+    <WL5G3N0:part element="WL5G3N1:validarRecursoUsuarioResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarUsuarioSenhaFuncao">
+    <WL5G3N0:part element="WL5G3N1:validarUsuarioSenhaFuncao" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="validarUsuarioSenhaFuncaoResponse">
+    <WL5G3N0:part element="WL5G3N1:validarUsuarioSenhaFuncaoResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="SegurancaServiceTc">
+    <WL5G3N0:operation name="listarPerfis">
+      <WL5G3N0:input message="WL5G3N1:listarPerfis"/>
+      <WL5G3N0:output message="WL5G3N1:listarPerfisResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarRecursos">
+      <WL5G3N0:input message="WL5G3N1:listarRecursos"/>
+      <WL5G3N0:output message="WL5G3N1:listarRecursosResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarTransacoesAtendimento">
+      <WL5G3N0:input message="WL5G3N1:listarTransacoesAtendimento"/>
+      <WL5G3N0:output message="WL5G3N1:listarTransacoesAtendimentoResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarUsuariosPorTransacao">
+      <WL5G3N0:input message="WL5G3N1:listarUsuariosPorTransacao"/>
+      <WL5G3N0:output message="WL5G3N1:listarUsuariosPorTransacaoResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="autenticarUsuario">
+      <WL5G3N0:input message="WL5G3N1:autenticarUsuario"/>
+      <WL5G3N0:output message="WL5G3N1:autenticarUsuarioResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="buscarUsuario">
+      <WL5G3N0:input message="WL5G3N1:buscarUsuario"/>
+      <WL5G3N0:output message="WL5G3N1:buscarUsuarioResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarFuncoes">
+      <WL5G3N0:input message="WL5G3N1:listarFuncoes"/>
+      <WL5G3N0:output message="WL5G3N1:listarFuncoesResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarPermissaoBloqueio">
+      <WL5G3N0:input message="WL5G3N1:validarPermissaoBloqueio"/>
+      <WL5G3N0:output message="WL5G3N1:validarPermissaoBloqueioResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="buscarUsuarioPorChapaOuMatricula">
+      <WL5G3N0:input message="WL5G3N1:buscarUsuarioPorChapaOuMatricula"/>
+      <WL5G3N0:output message="WL5G3N1:buscarUsuarioPorChapaOuMatriculaResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarRecursoUsuario">
+      <WL5G3N0:input message="WL5G3N1:validarRecursoUsuario"/>
+      <WL5G3N0:output message="WL5G3N1:validarRecursoUsuarioResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarUsuarioSenhaFuncao">
+      <WL5G3N0:input message="WL5G3N1:validarUsuarioSenhaFuncao"/>
+      <WL5G3N0:output message="WL5G3N1:validarUsuarioSenhaFuncaoResponse"/>
+      <WL5G3N0:fault message="WL5G3N1:ApplicationFault" name="ApplicationFault"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="SegurancaServiceTcBinding" type="WL5G3N1:SegurancaServiceTc">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="listarPerfis">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarRecursos">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarTransacoesAtendimento">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarUsuariosPorTransacao">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="autenticarUsuario">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="buscarUsuario">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="listarFuncoes">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarPermissaoBloqueio">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="buscarUsuarioPorChapaOuMatricula">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarRecursoUsuario">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="validarUsuarioSenhaFuncao">
+      <WL5G3N2:operation/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="ApplicationFault">
+        <WL5G3N2:fault name="ApplicationFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="SegurancaServiceTc">
+    <WL5G3N0:port binding="WL5G3N1:SegurancaServiceTcBinding" name="SegurancaServiceTc">
+      <WL5G3N2:address location="http://NB-002739.cwinet.local:8011/ebs/ppf/realize/SegurancaPS"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

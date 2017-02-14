@@ -52,9 +52,9 @@ import static com.google.common.collect.FluentIterable.from;
 
 public class WireMockApp implements StubServer, Admin {
     
-    public static final String FILES_ROOT = "wiremock-stubs/__files";
+    public static final String FILES_ROOT = "__files";
     public static final String ADMIN_CONTEXT_ROOT = "/__admin";
-    public static final String MAPPINGS_ROOT = "wiremock-stubs/mappings";
+    public static final String MAPPINGS_ROOT = "mappings";
 
     private final StubMappings stubMappings;
     private final RequestJournal requestJournal;

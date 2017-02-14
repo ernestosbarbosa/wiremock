@@ -23,7 +23,7 @@ RUN	apt-get install -y git && \
 	git config --global user.email "jose.barbosa@cwi.com.br" && \
 	git config --global user.name "jose.barbosa" && \
 	echo "10.0.100.12 git.cwi.com.br" >> /etc/hosts && \
-	git clone http://<usuario>:<senha>@10.0.100.12/jose.barbosa/wiremock-stubs.git /home/wiremock/wiremock-stubs/
+	git clone http://jose.barbosa:Eb186715-c@10.0.100.12/jose.barbosa/wiremock-stubs.git /home/wiremock/
 #substituir <usuario> e <senha> pela sua senha antes do build
 
 #busca a extensão
