@@ -13,17 +13,14 @@ RUN mkdir -p /var/wiremock/lib/ \
 WORKDIR /home/wiremock
 
 #expõe as portas
-EXPOSE 8080 8081
-
-# aqui deve buscar do git os mapeamentos (hoje busca de uma pasta física)
-#COPY release/libs /home/wiremock
+EXPOSE 8081
 
 RUN apt-get update
 RUN	apt-get install -y git && \
 	git config --global user.email "jose.barbosa@cwi.com.br" && \
 	git config --global user.name "jose.barbosa" && \
-	echo "10.0.100.12 git.cwi.com.br" >> /etc/hosts && \
-	git clone http://<usuario>:<senha>@10.0.100.12/jose.barbosa/wiremock-stubs.git /home/wiremock/
+	echo "10.0.100.12 git.cwi.com.br" >> /etc/hosts 
+#	git clone http://<usuario>:<senha>@10.0.100.12/jose.barbosa/wiremock-stubs.git /home/wiremock/
 #substituir <usuario> e <senha> pela sua senha antes do build
 
 #busca a extensão
@@ -35,4 +32,6 @@ ADD https://github.com/ernestosbarbosa/wiremock/raw/master/release/wiremock-body
 
 #executa o wiremock com a extensão
 #CMD ["java", "-cp", "/var/wiremock/lib/*:/var/wiremock/extensions/*", "com.github.tomakehurst.wiremock.standalone.WireMockServerRunner"]
-CMD ["java", "-cp", "/var/wiremock/lib/*:/var/wiremock/extensions/*", "com.github.tomakehurst.wiremock.standalone.WireMockServerRunner", "--extensions", "com.opentable.extension.BodyTransformer"]
+#CMD ["java", "-cp", "/var/wiremock/lib/*:/var/wiremock/extensions/*", "com.github.tomakehurst.wiremock.standalone.WireMockServerRunner", "--extensions", "com.opentable.extension.BodyTransformer"]
+
+CMD git clone http://<usuario>:<senha>@10.0.100.12/jose.barbosa/wiremock-stubs.git /home/wiremock/ && java -cp /var/wiremock/lib/*:/var/wiremock/extensions/* com.github.tomakehurst.wiremock.standalone.WireMockServerRunner --extensions com.opentable.extension.BodyTransformer

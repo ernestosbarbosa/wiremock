@@ -9,3 +9,17 @@ install:
 
 script: ./gradlew test
 
+
+
+## build e push do dockerfile direto quando comitar
+after_success:
+  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
+      docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" ;
+    
+      docker build -t ernestosbarbosa/wiremock-with-body-transform . ;
+    
+      docker push docker.io/ernestosbarbosa/wiremock-with-body-transform:latest ;
+
+      docker push docker.io/ernestosbarbosa/wiremock-with-body-transform:${VERSION} ;
+    fi
+
